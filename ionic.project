@@ -3,6 +3,7 @@
   "app_id": "",
   "gulpStartupTasks": [
     "sass",
+    "templatecache",
     "watch"
   ],
   "watchPatterns": [
