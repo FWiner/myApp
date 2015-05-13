@@ -36,7 +36,13 @@ gulp.task('sass', function(done) {
 //html template
 gulp.task('templatecache', function (done) {
     gulp.src('./www/templates/**/*.html')
-        .pipe(templateCache({standalone:true}))
+        .pipe(templateCache({
+            standalone:true,
+            base: function(file) {
+//            var filename = /[^/]*$/.exec( file.relative )[0];
+//            return 'templates/' + filename;
+                return 'templates/'+ file.relative;
+        }}))
         .pipe(gulp.dest('./www/js'))
         .on('end', done);
 });
