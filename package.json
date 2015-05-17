@@ -8,7 +8,7 @@
     "gulp-concat": "^2.2.0",
     "gulp-minify-css": "^0.3.0",
     "gulp-rename": "^1.2.0",
-    "gulp-angular-templatecache":"^1.5.0"
+    "gulp-angular-templatecache": "^1.5.0"
   },
   "devDependencies": {
     "bower": "^1.3.3",
@@ -16,9 +16,9 @@
     "shelljs": "^0.3.0"
   },
   "cordovaPlugins": [
-    "org.apache.cordova.device",
-    "org.apache.cordova.console",
-    "com.ionic.keyboard"
+    "com.ionic.keyboard",
+    "cordova-plugin-console",
+    "cordova-plugin-device"
   ],
   "cordovaPlatforms": [
     "ios"
